@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {Container, Row, Col} from 'react-bootstrap'
+import Balance from "./components/Balance"
+import History from "./components/History";
+import UserForm from "./components/UserForm";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Container className = "container">
+      <h1>
+       Expence Tracker
+      </h1>
+      <Row className = "balance-row">
+        <Col className = "balance-col">
+        <Balance />
+        </Col>
+      </Row>
+      <Row className = "hisotry-row">
+        <Col className = "history-col">
+        <History />
+        </Col>
+      </Row>
+      <Row className = "form-row">
+        <Col className = "form-col">
+        <UserForm />
+        </Col>
+      </Row>
+    </Container>
+   </>
   );
 }
 

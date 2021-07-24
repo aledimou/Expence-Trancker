@@ -1,0 +1,38 @@
+h1 {
+  margin: 10px;
+}
+
+h2 {
+  margin: 10px;
+}
+
+.col-wrapper {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.left-div {
+  text-align: center;
+  width: 200px;
+  height: auto;
+}
+
+.right-div {
+  text-align: center;
+  width: 200px;
+  height: auto;
+}
+
+.income-green {
+  color: #28df99;
+}
+
+.negative-neutural {
+  padding: 5px;
+  color: black;
+}
+
+.negative-red {
+  padding: 5px;
+  color: red;
+}
